@@ -1,6 +1,9 @@
 # The releases and commits are up to date as of 2025-03-01.
 
-FROM ubuntu:noble-20250127
+# The statement --platform=linux/amd64 causes Docker to output a warning but
+# trying to build for any other platform causes a failure on macOS (silicon)
+# since libdxil.so and libdxcompiler.so is built for x86_64.
+FROM --platform=linux/amd64 ubuntu:noble-20250127
 
 ENV DEBIAN_FRONTEND=noninteractive
 
