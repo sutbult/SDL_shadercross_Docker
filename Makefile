@@ -24,3 +24,7 @@ docker-run-example: docker-build
 			shadercross /in/triangle.vert.hlsl -o /out/triangle.vert.spv && \
 			shadercross /in/triangle.vert.hlsl -o /out/triangle.vert.msl && \
 			shadercross /in/triangle.vert.hlsl -o /out/triangle.vert.dxil"
+
+# Removes folder "out".
+clean-out:
+	rm -rf out
