@@ -5,3 +5,5 @@ is available.
 
 Run `make docker-run-example` to compile an example shader.
 The results can be found in `out`.
+
+The image has been tested on macOS (silicon).
